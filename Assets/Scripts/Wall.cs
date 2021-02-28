@@ -9,7 +9,7 @@ public class Wall : MonoBehaviour
     public int hp = 3;                          //hit points for the wall.
 
 
-    private SpriteRenderer spriteRenderer;      //Store a component reference to the attached SpriteRenderer.
+    private readonly SpriteRenderer spriteRenderer;      //Store a component reference to the attached SpriteRenderer.
 
 
     void Start()

@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
         levelImage.SetActive(true);
 
         //Call the HideLevelImage function with a delay in seconds of levelStartDelay.
-        Invoke("HideLevelImage", levelStartDelay);
+        Invoke(nameof(HideLevelImage), levelStartDelay);
 
         //Clear any Enemy objects in our List to prepare for next level.
         enemies.Clear();

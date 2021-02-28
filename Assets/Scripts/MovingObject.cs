@@ -8,8 +8,8 @@ public abstract class MovingObject : MonoBehaviour
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
 
-    private BoxColider2D boxCollider;       //The BoxCollider2D component attached to this object.
-    private Rigedbody2D rb2D;              //The Rigidbody2D component attached to this object.
+    private BoxCollider2D boxCollider;       //The BoxCollider2D component attached to this object.
+    private Rigidbody2D rb2D;              //The Rigidbody2D component attached to this object.
     private float inverseMoveTime;          //Used to make movement more efficient.
     private bool isMoving;                  //Is the object currently moving.
 

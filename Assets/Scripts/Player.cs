@@ -2,10 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;	//Allows us to use UI.
 using UnityEngine.SceneManagement;
+using System;
 
 
 //Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
-public class Player : Movingobject
+public class Player : MovingObject
 {
     public float restartLevelDelay = 1f;        //Delay time in seconds to restart level.
     public int pointsPerFood = 10;              //Number of points to add to player food points when picking up a food object.
@@ -77,6 +78,11 @@ public class Player : Movingobject
             //Pass in horizontal and vertical as parameters to specify the direction to move Player in.
             AttemptMove<Wall>(horizontal, vertical);
         }
+    }
+
+    private void AttemptMove<T>(float horizontal, int vertical)
+    {
+        throw new NotImplementedException();
     }
 
     //AttemptMove overrides the AttemptMove function in the base class MovingObject

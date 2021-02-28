@@ -25,7 +25,7 @@ public class Enemy : MovingObject
         animator = GetComponent<Animator>();
 
         //Find the Player GameObject using it's tag and store a reference to its transform component.
-        target = GameObject.FindGameObjectWithTag("Player").transfrom;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
 
         //Call the start function of our base class MovingObject.
         base.Start();
