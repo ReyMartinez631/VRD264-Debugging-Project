@@ -50,7 +50,8 @@ public class SoundManager : MonoBehaviour
         efxSource.pitch = randomPitch;
 
         //Set the clip to the clip at our randomly chosen index.
-        efxSource.clip = clips[randomIndex];
+        AudioClip audioClip = clips[randomIndex];
+        efxSource.clip = audioClip;
 
         //Play the clip.
         efxSource.Play();
