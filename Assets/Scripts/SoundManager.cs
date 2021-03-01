@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
 
 
-    private void Awake()
+    public void Awake()
     {
         //Check if there is already an instance of SoundManager
         if (instance == null)
